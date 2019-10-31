@@ -1,0 +1,27 @@
+hostconfig:
+  dns: {{ dns[0] }}
+  tod: {{ tod[0] }}
+{% if dns | length > 1 %}
+  otherdns:
+{% for i in dns %}
+{% if loop.index != 1 %}
+  - {{ i }}
+{% endif %}
+{% endfor %}
+{% endif %}
+{% if tod | length > 1 %}
+  othertod:
+{% for i in tod %}
+{% if loop.index != 1 %}
+  - {{ i }}
+{% endif %}
+{% endfor %}
+{% endif %}
+blocks:
+  - netmask: {{ netmask }}
+    gateway: {{ gateway }}
+    ips:
+{% for number in range(instances) %}
+    - ip: {{ ip | ipmath(number) }}
+      hostname: {{ cluster_hostname }}-{{ '%02d'|format(1+number) }}
+{% endfor %}

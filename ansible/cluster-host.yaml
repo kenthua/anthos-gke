@@ -1,0 +1,64 @@
+hostconfig:
+  dns: 8.8.8.8
+  tod: 0.ubuntu.pool.ntp.org
+  otherdns:
+  - 8.8.4.4
+  - 1.1.1.1
+  othertod:
+  - 1.ubuntu.pool.ntp.org
+blocks:
+  - netmask: 255.255.255.0
+    gateway: 10.96.100.1
+    ips:
+    - ip: 10.96.100.10
+      hostname: admin-cluster-01
+    - ip: 10.96.100.11
+      hostname: admin-cluster-02
+    - ip: 10.96.100.12
+      hostname: admin-cluster-03
+    - ip: 10.96.100.13
+      hostname: admin-cluster-04
+    - ip: 10.96.100.14
+      hostname: admin-cluster-05
+    - ip: 10.96.100.15
+      hostname: admin-cluster-06
+    - ip: 10.96.100.16
+      hostname: admin-cluster-07
+    - ip: 10.96.100.17
+      hostname: admin-cluster-08
+    - ip: 10.96.100.18
+      hostname: admin-cluster-09
+    - ip: 10.96.100.19
+      hostname: admin-cluster-10
+    - ip: 10.96.100.20
+      hostname: admin-cluster-11
+    - ip: 10.96.100.21
+      hostname: admin-cluster-12
+    - ip: 10.96.100.22
+      hostname: admin-cluster-13
+    - ip: 10.96.100.23
+      hostname: admin-cluster-14
+    - ip: 10.96.100.24
+      hostname: admin-cluster-15
+    - ip: 10.96.100.25
+      hostname: admin-cluster-16
+    - ip: 10.96.100.26
+      hostname: admin-cluster-17
+    - ip: 10.96.100.27
+      hostname: admin-cluster-18
+    - ip: 10.96.100.28
+      hostname: admin-cluster-19
+    - ip: 10.96.100.29
+      hostname: admin-cluster-20
+    - ip: 10.96.100.30
+      hostname: admin-cluster-21
+    - ip: 10.96.100.31
+      hostname: admin-cluster-22
+    - ip: 10.96.100.32
+      hostname: admin-cluster-23
+    - ip: 10.96.100.33
+      hostname: admin-cluster-24
+    - ip: 10.96.100.34
+      hostname: admin-cluster-25
+    - ip: 10.96.100.35
+      hostname: admin-cluster-26
